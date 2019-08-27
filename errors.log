@@ -1,0 +1,36 @@
+WARNING:fake_useragent:Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.11
+Traceback (most recent call last):
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1320, in do_open
+    r = h.getresponse()
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\site-packages\fake_useragent\utils.py", line 166, in load
+    verify_ssl=verify_ssl,
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\site-packages\fake_useragent\utils.py", line 122, in get_browser_versions
+    verify_ssl=verify_ssl,
+  File "C:\Users\Glago Gideon\AppData\Local\Programs\Python\Python37\lib\site-packages\fake_useragent\utils.py", line 84, in get
+    raise FakeUserAgentError('Maximum amount of retries reached')
+fake_useragent.errors.FakeUserAgentError: Maximum amount of retries reached
