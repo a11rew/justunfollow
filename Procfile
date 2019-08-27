@@ -1,1 +1,1 @@
-bot: python ump9.py 
+bot: python3 ump9.py 
